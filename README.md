@@ -128,13 +128,13 @@ What I used:
 	```ruby
 	# webserver.rb
 	file '/var/www/html/index.html' do
-		content '
-		<html>
-			<body>
-				<h1>hello world</h1>
-			</body>
-		</html>
-		'
+	  content '
+	  <html>
+	    <body>
+	      <h1>hello world</h1>
+	    </body>
+	  </html>
+	  '
 	end
 
 	# Bash
@@ -169,9 +169,9 @@ What I used:
  	```html
 	<!-- index.html.erb -->
 	<html>
-		<body>
-			<h1>hello world</h1>
-		</body>
+	  <body>
+	    <h1>hello world</h1>
+	  </body>
 	</html>
 	```
 
@@ -204,4 +204,4 @@ What I used:
 	# The general form of this would be recipe[<COOKBOOK>::<RECIPE>]'
 	```
 
-7. To verify that everything is still working, re-run the `curl localhost` command or go to `localhost:8100` in your browser 
+7. To verify that everything is still working, re-run the `curl localhost` command or go to `localhost:8100` in your browser
