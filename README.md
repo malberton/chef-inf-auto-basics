@@ -96,8 +96,8 @@ What I used:
 	```ruby
 	# webserver.rb
 	apt_update 'Update the apt cache daily' do
-		frequency 86_400 # 1 day measured in seconds. Ruby convention for large numbers is to use an underscore for readability
-		action :periodic
+	  frequency 86_400 # 1 day measured in seconds. Ruby convention for large numbers is to use an underscore for readability
+	  action :periodic
 	end
 	```
 
@@ -116,8 +116,8 @@ What I used:
 	```ruby
 	# webserver.rb
 	service 'apache2' do
-		supports status: true			# Helps Chef determine if the apache2 service is running
-		action [:enable, :start]	# Enable and start the apache2 service
+	  supports status: true     # Helps Chef determine if the apache2 service is running
+	  action [:enable, :start]  # Enable and start the apache2 service
 	end
 
 	# Bash
