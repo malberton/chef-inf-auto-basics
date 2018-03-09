@@ -24,9 +24,9 @@ What I used:
 
 	# Step 3
 	$ docker -it -v $(pwd):/root/chef-repo -p 8100:80 ubuntu:16.04 bash
-		# -it runs an interactive container with a pseudoterminal allocated
-		# -v $(pwd):/root/chef-repo mounts the current host directory to the container
-		# -p 8100:80 maps port 8100 on the host to port 80 on the container
+	  # -it runs an interactive container with a pseudoterminal allocated
+	  # -v $(pwd):/root/chef-repo mounts the current host directory to the container
+	  # -p 8100:80 maps port 8100 on the host to port 80 on the container
 	```
 
 4. You should be logged into the container now as the root user (`root@<container_ID>:`)
