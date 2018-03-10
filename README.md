@@ -15,14 +15,13 @@ What I used:
 1. Make sure Docker is installed, then in iTerm or Terminal navigate to the folder where you'll be storing your files
 
 2. Pull the Ubuntu image you'd like to use. The official documentation uses 14.04 but I used 16.04
+	```bash
+		$ docker pull ubuntu:16.04
+	```
 
 3. Run a container using that image
 
  	```bash
-	# Step 2
-	$ docker pull ubuntu:16.04
-
-	# Step 3
 	$ docker -it -v $(pwd):/root/chef-repo -p 8100:80 ubuntu:16.04 bash
 	  # -it runs an interactive container with a pseudoterminal allocated
 	  # -v $(pwd):/root/chef-repo mounts the current host directory to the container
